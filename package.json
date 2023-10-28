@@ -1,0 +1,38 @@
+{
+  "name": "red-contrib-timeoutswitch",
+  "version": "0.0.1",
+  "description": "A straight forward node-red timeout switch that allows turn something on and then off for a desired amount of time (specified in seconds).",
+  "main": "timoutswitch.js",
+  "author": {
+    "name": "Francois Buys"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node-red",
+    "timer",
+    "switch",
+    "timeswitch",
+    "timerswitch",
+    "timeoutswitch",
+    "clock",
+    "multi"
+  ],
+  "node-red": {
+    "nodes": {
+      "timeroutswitch": "timeroutswitch.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbuys/node-red-contrib-timeoutswitch"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "3.0.3"
+  }
+}
