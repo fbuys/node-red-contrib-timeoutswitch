@@ -1,0 +1,64 @@
+<script type="text/html" data-template-name="timeoutswitch">
+  <div class="form-row">
+    <label for="node-input-onpayload">
+      <i class="fa fa-envelope"></i> <span>On Payload</span>
+    </label>
+    <input type="text" id="node-input-onpayload" placeholder="on" />
+  </div>
+  <div class="form-row">
+    <label for="node-input-offpayload">
+      <i class="fa fa-envelope"></i> <span>Off Payload</span>
+    </label>
+    <input type="text" id="node-input-offpayload" placeholder="off" />
+  </div>
+  <hr />
+  <div class="form-row">
+    <label for="node-input-ontopic">
+      <i class="fa fa-tasks"></i> <span>On Topic</span>
+    </label>
+    <input type="text" id="node-input-ontopic" />
+  </div>
+  <div class="form-row">
+    <label for="node-input-offtopic">
+      <i class="fa fa-tasks"></i> <span>Off Topic</span>
+    </label>
+    <input type="text" id="node-input-offtopic" />
+  </div>
+  <hr />
+  <div class="form-row">
+    <label for="node-input-name">
+      <i class="fa fa-tag"></i>
+      <span data-i18n="node-red:common.label.name"></span>
+    </label>
+    <input
+      type="text"
+      id="node-input-name"
+      data-i18n="[placeholder]node-red:common.label.name"
+    />
+  </div>
+</script>
+
+<script type="text/javascript">
+  RED.nodes.registerType("timeoutswitch", {
+    category: "input",
+    color: "#C0DEED",
+    defaults: {
+      name: { value: "" },
+      ontopic: { value: "" },
+      offtopic: { value: "" },
+      onpayload: { value: "" },
+      offpayload: { value: "" },
+    },
+    inputs: 1,
+    outputs: 1,
+    icon: "font-awesome/fa-hourglass-end",
+    label: function () {
+      return this.name || "timeoutswitch";
+    },
+    paletteLabel: 'timeoutswitch',
+  });
+</script>
+
+<script type="text/markdown" data-help-name="node-type">
+  Coming soon.
+</script>

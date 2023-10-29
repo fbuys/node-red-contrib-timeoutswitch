@@ -19,12 +19,16 @@
   ],
   "node-red": {
     "nodes": {
-      "timeroutswitch": "timeroutswitch.js"
+      "timeoutswitch": "timeoutswitch.js"
     }
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/fbuys/node-red-contrib-timeoutswitch"
+  },
+  "scripts": {
+    "test": "jest",
+    "debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
   },
   "devDependencies": {
     "eslint": "^8.52.0",
@@ -33,6 +37,9 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-n": "^16.2.0",
     "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "node-red": "^3.1.0",
+    "node-red-node-test-helper": "^0.3.2",
     "prettier": "3.0.3"
   }
 }
